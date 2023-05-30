@@ -1,3 +1,9 @@
 def get_val(collection, key, default='git'):
-    pass
+    """Функция, возвращающая элемент в словаре"""
+
+    if collection.get(key):
+        return collection.get(key)
+    else:
+        return default
+
 
